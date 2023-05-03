@@ -32,7 +32,6 @@ export default function Card({
           <Image
             fill
             alt="tech"
-            // placeholder="blur"
             src={image}
             sizes="(max-width: 480px) 100vw,
                   (max-width: 768px) 75vw,
