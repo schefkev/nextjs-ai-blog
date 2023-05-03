@@ -1,5 +1,7 @@
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
+import Footer from './(shared)/Footer';
+import Navbar from './(shared)/Navbar';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -16,8 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={openSans.className}>
-      <body>{children}</body>
+    <html className={openSans.className} lang="en">
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
